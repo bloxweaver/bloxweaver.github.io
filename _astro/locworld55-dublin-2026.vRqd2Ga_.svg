@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">BloxWeaver at LocWorld55 Dublin</title>
+  <desc id="desc">Announcement graphic for BloxWeaver attending LocWorld55 in Dublin, June 9-11, 2026.</desc>
+  <rect width="1200" height="1200" fill="#0c1b2f"/>
+  <g transform="translate(744 78)">
+    <g fill="#2a9bd7">
+      <rect x="0" y="0" width="9" height="9"/>
+      <rect x="16" y="0" width="15" height="15"/>
+      <rect x="0" y="18" width="10" height="10"/>
+      <rect x="19" y="20" width="10" height="10"/>
+      <path d="M38 8h42v73L7 154V42h31z"/>
+    </g>
+    <path d="M80 52v29l-36 36H11V52z" fill="#fff"/>
+    <text x="98" y="89" fill="#2a9bd7" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">BLOX</text>
+    <text x="224" y="89" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">WEAVER</text>
+  </g>
+  <g transform="translate(71 242)" fill="#2a9bd7">
+    <rect width="12" height="12"/>
+    <rect x="18" width="16" height="16"/>
+    <rect y="20" width="12" height="12"/>
+    <rect x="20" y="20" width="12" height="12"/>
+  </g>
+  <text x="127" y="272" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="44" letter-spacing="1">MEET US AT</text>
+  <line x1="72" y1="313" x2="360" y2="313" stroke="#2a9bd7" stroke-width="4"/>
+  <text x="600" y="510" fill="#fff" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="400">LocWorld55, Dublin</text>
+  <text x="600" y="626" fill="#fff" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="400">June 9-11, 2026</text>
+  <g transform="translate(430 694)">
+    <path d="M0 40c80-38 126-36 159-18C103 12 60 22 15 53z" fill="#8e44ad"/>
+    <path d="M18 57c72-32 119-31 151-15C109 37 67 45 27 72z" fill="#159bd7"/>
+    <path d="M5 81c83-30 139-27 173-8C111 68 65 76 16 101z" fill="#ef1b2d"/>
+    <path d="M16 106c77-27 128-24 158-6C110 95 66 103 28 124z" fill="#00a651"/>
+    <path d="M28 131c64-19 106-17 134-2C108 128 72 135 40 150z" fill="#ffdf24"/>
+    <path d="M42 156c48-12 85-9 111 4C108 163 76 166 54 178z" fill="#9b59b6"/>
+    <text x="185" y="108" fill="#b45bb0" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="500">LOC</text>
+    <text x="190" y="151" fill="#b45bb0" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="400" letter-spacing="2">WORLD</text>
+    <text x="360" y="109" fill="#b45bb0" font-family="Arial, Helvetica, sans-serif" font-size="16">TM</text>
+  </g>
+  <line x1="408" y1="890" x2="792" y2="890" stroke="#2a9bd7" stroke-width="4"/>
+  <text x="600" y="1047" fill="#fff" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="400">Let's Connect!</text>
+</svg>
