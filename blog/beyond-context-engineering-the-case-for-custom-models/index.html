@@ -21,7 +21,10 @@
 <p>That belief was not popular. I was told on CTO lists, at conferences, and in plenty of private conversations that training our own models was a waste of time. The advice was to wait for the next frontier release. The general model would catch up, and the custom work would become obsolete before it paid back.</p>
 <p>Our experience has consistently been the opposite.</p>
 <p>Frontier models have improved enormously, and we use them every day. At the same time, the custom models we build for ourselves and our clients are in production. Customised LLMs, translation, transcription, quality-estimation, and multimodal models work across language, audio, images, document layouts, and tightly bounded decisions. They deliver outcomes where generic models, longer prompts, and larger context windows did not meet the required standard.</p>
-<p>A new frontier release raises the general baseline. It does not contain your reviewer corrections, domain terminology, language-pair characteristics, acoustic environment, visual categories, quality thresholds, or operating constraints. Waiting gives you a better general model. It does not make that model specific to your work, and it does not allow the learning from your production data to compound.</p>
+<p>A new frontier release raises the general baseline. It does not contain your reviewer corrections, domain terminology, language-pair characteristics, acoustic environment, visual categories, quality thresholds, or operating constraints, and it does not allow the learning from your production data to compound.</p>
+<div class="border-l-4 border-bloxweaver-blue font-semibold pl-4 py-2">
+  <p class="text-gray-700">Waiting gives you a better general model. It does not make that model specific to your work.</p>
+</div>
 <p>Custom models are not simply a remedy for generic models that fall short. Where the task is understood, the data exists, and the performance or economics justify the investment, a custom model may be the right decision from the start.</p>
 <h2 id="the-genai-wave-narrowed-the-model-conversation">The GenAI wave narrowed the model conversation</h2>
 <p>The arrival of ChatGPT changed what people thought was possible with AI. It also narrowed the conversation around how AI systems should be built. A much larger community began building AI-enabled solutions, often with a foundation-model API call as their main frame of reference.</p>
@@ -72,7 +75,9 @@
 <p>We have often found that the best results come from combining context engineering with model customisation. The context supplies the information needed for the current task. Fine-tuning teaches the model which parts matter, how they relate to the task, and how they should influence the output.</p>
 <p>Machine translation with automatic post-editing is a good example. An APE model may receive the source text, an initial translation, terminology, document context, quality signals, and previous corrections. Supplying those inputs is only part of the solution. The model also needs to learn when to preserve the initial translation, when to correct it, which contextual evidence should take priority, and how to avoid making unnecessary changes.</p>
 <p>The same principle applies beyond translation. Models can be trained to use retrieved evidence more reliably, attend to relevant visual or document context, follow domain-specific metadata, interpret tool outputs, or apply contextual quality signals consistently.</p>
-<p>Sometimes what belongs in the weights is the behaviour required to use the context properly.</p>
+<div class="border-l-4 border-bloxweaver-blue font-semibold pl-4 py-2">
+  <p class="text-gray-700">Sometimes what belongs in the weights is the behaviour required to use the context properly.</p>
+</div>
 <p>A useful way to separate the responsibilities is:</p>
 <div class="not-prose my-8 grid gap-4 md:grid-cols-3">
   <div class="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
@@ -114,7 +119,9 @@
 <p>This is particularly important for multilingual models. An aggregate score can hide significant differences between languages and language pairs, especially where high-resource languages dominate the evaluation. Some multilingual benchmarks are also created through translation, which can flatten or distort the meaning they were intended to test. A model can perform well on the benchmark while still struggling with the terminology, linguistic variation, and quality expectations found in real work.</p>
 <p>A model designed for a particular language pair, content type, quality policy, or production environment needs to be evaluated against that work.</p>
 <p>Our approach is consistent even when the measurements differ. We establish a baseline using the strongest available models and techniques, and a customised model has to beat it on the same held-out work. If it does not, we use the stronger existing option.</p>
-<p>Frontier progress should raise the baseline you test against, not erase the value of task-specific data.</p>
+<div class="border-l-4 border-bloxweaver-blue font-semibold pl-4 py-2">
+  <p class="text-gray-700">Frontier progress should raise the baseline you test against, not erase the value of task-specific data.</p>
+</div>
 <h2 id="cost-control-and-sovereignty-follow">Cost, control, and sovereignty follow</h2>
 <p>Once a customised model demonstrates an equivalent or better production outcome, the wider benefits become easier to evaluate.</p>
 <p>A smaller model can be cheaper and faster than repeatedly sending a large prompt to a frontier model, and reasoning models widen that gap because the same visible output can carry many times the billed tokens. A model deployed in your own environment can give you more control over data handling, availability, versioning, and upstream policy changes. A system with clearly defined responsibilities can also make failures easier to diagnose than one model attempting the whole workflow in a single generation.</p>
