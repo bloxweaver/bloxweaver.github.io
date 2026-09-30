@@ -35,7 +35,7 @@
 <p>If a model repeatedly needs the same long instructions, corrections, examples, terminology rules, or decision patterns, the system is teaching it the same lesson on every call. The behaviour has not been learned. It is reconstructed each time, with the cost and variability that comes with that.</p>
 <p>The context window is finite, and everything in it competes for attention. Every repeated instruction is paid for again on every call, and a provider update can quietly change behaviour a team spent months stabilising.</p>
 <p>There is another problem hiding underneath. Sometimes the task should not belong to a general-purpose language model at all.</p>
-<h2 id="not-every-ai-problem-is-a-language-generation-problem">Not every AI problem is a language-generation problem</h2>
+<h2 id="not-every-ai-problem-is-best-solved-by-a-general-purpose-llm">Not every AI problem is best solved by a general-purpose LLM</h2>
 <p>Production workflows rarely contain one task. They contain a collection of smaller tasks with different inputs, outputs, constraints, and definitions of success.</p>
 <p>A <a href="/solutions/video-transcription-dubbing" target="_blank" rel="noopener noreferrer">multilingual video workflow</a>, for example, may need to recognise speech, identify speakers, interpret what is visible on screen, translate dialogue, estimate translation quality, generate new speech, align it to timing constraints, and decide which items need human review.</p>
 <p>A deterministic workflow may coordinate those steps, or an LLM may help where language, ambiguity, or judgement requires it. Neither choice means an LLM should perform every task.</p>
